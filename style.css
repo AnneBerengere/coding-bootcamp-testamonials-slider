@@ -1,0 +1,236 @@
+/*Tout format*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(240, 18%, 77%);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    position: relative;
+}
+
+.card_text {
+    z-index: 100;
+}
+
+.card_text_content {
+    line-height: 1.4em;
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+}
+
+.author-name {
+    color: hsl(240, 38%, 20%);
+    font-weight: 700;
+}
+
+.author_job {
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+.image_container {
+    z-index: 50;
+    border-radius: 5px;
+}
+
+.caroussel_button {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 5px 40px 0 hsl(240, 18%, 77%);
+}
+
+.photo {
+    border-radius: 5px;
+}
+
+
+/*ordinateur*/
+@media only screen and (min-width: 941px) {
+
+    .card {
+        min-width: 812px;
+        max-width: 812px;
+        min-height: 450px;
+        max-height: 450px;
+    }
+
+    .pattern_quotes {
+        width: auto;
+        height: 57px;
+        position: absolute;
+        top: 120px;
+        left: 150px;
+        z-index: 10;
+    }
+
+    .pattern_bg {
+        width: auto;
+        height: 370px;
+        position: absolute;
+        top: 27px;
+        right: 40px;
+        z-index: 10;
+    }
+
+    .pattern_curve {
+        width: auto;
+        height: 85px;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    .card_text {
+        height: 120px;
+        max-width: 360px;
+        min-width: 360px;
+        position: absolute;
+        top: 160px;
+        left: 100px;
+    }
+
+    .card_text_content {
+         font-size: 1.1em;
+     }
+
+    .card_text_author {
+        font-weight: 700;
+        font-size: 0.6em;
+        margin-top: 1.8em;
+    }
+
+    .image_container {
+        width: 305px;
+        height: 305px;
+        position: absolute;
+        top: 64px;
+        right: 95px;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .caroussel_button {
+        width: 64px;
+        height: 32px;
+        position: absolute;
+        bottom: -16px;
+        left: 32px;
+        z-index: 100;
+    }
+
+    .icon_prev {
+        height: 10px;
+        width: auto;
+        margin-right: 0.9em;
+    }
+
+    .icon_next {
+        height: 10px;
+        width: auto;
+    }
+}
+
+/*mobile*/
+@media only screen and (max-width:940px) {
+
+    .card {
+        min-width: 375px;
+        max-width: 375px;
+        min-height: 667px;
+        max-height: 667px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pattern_quotes {
+        width: auto;
+        height: 50px;
+        position: absolute;
+        top: 365px;
+        left: 157px;
+    }
+
+    .pattern_bg {
+        width: auto;
+        height: 306px;
+        position: absolute;
+        top: 23px;
+        right: 23px;
+        z-index: 10;
+    }
+
+    .pattern_curve {
+        width: auto;
+        height: 71px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .card_text {
+        height: 135px;
+        max-width: 310px;
+        min-width: 310px;
+        position: absolute;
+        text-align: center;
+        top: 393px;
+        left: 37px;
+        font-size: 1.1em;
+    }
+
+    .card_text_author {
+        margin-top: 1.1em;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8em;
+        line-height: 1.4em;
+    }
+
+    .image_container {
+        position: absolute;
+        top: 53px;
+        right: 59px;
+        width: 253px;
+        height: 253px;
+    }
+
+    .photo {
+        width: 253px;
+        height: auto;
+    }
+
+    .caroussel_button {
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        bottom: -20px;
+        left: 88px;
+        z-index: 100;
+    }
+
+    .icon_prev {
+        height: 13px;
+        width: auto;
+        margin-right: 1em;
+    }
+
+    .icon_next {
+        height: 13px;
+        width: auto;
+    }
+}
