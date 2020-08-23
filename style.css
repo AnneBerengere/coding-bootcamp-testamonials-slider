@@ -9,9 +9,15 @@ body {
     min-height: 100vh;
 }
 
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
 .card {
     background-color: white;
     position: relative;
+    box-shadow: 0 10px 20px 0px hsl(240, 18%, 50%);
 }
 
 .card_text {
@@ -37,6 +43,7 @@ body {
 .image_container {
     z-index: 50;
     border-radius: 5px;
+    box-shadow: 0 15px 30px -10px hsl(240, 18%, 60%);
 }
 
 .caroussel_button {
@@ -45,7 +52,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 5px 40px 0 hsl(240, 18%, 77%);
 }
 
 .photo {
